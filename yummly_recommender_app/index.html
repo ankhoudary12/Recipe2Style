@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+ <html>
+   <head>
+     <!--Import Google Icon Font-->
+     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+     <!--Import materialize.css-->
+     <link type="text/css" rel="stylesheet" href="static/css/materialize.min.css"  media="screen,projection"/>
+     <title>R e c i p e 2 S t y l e </title>
+     <!--Let browser know website is optimized for mobile-->
+     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+   </head>
+
+   <body>
+
+
+     <div class='container'>
+
+       <h4>Recipe2Style</h4>
+       <p> <font size="4">Type a food you enjoy. Then select a cuisine to find that food transformed into a new style!</font></p>
+       <p> <font size="4">It's not magic, it's DATA SCIENCE!!!</font></p>
+
+      <br><br><br><br>
+
+      <div class='row'>
+      <div class='col s4'>
+     <iframe src="https://giphy.com/embed/58F2SFPrFHRrV9q3r9" width="300" height="300" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/cute-food-loop-58F2SFPrFHRrV9q3r9">via GIPHY</a></p>
+
+
+     <button class="btn waves-effect waves-light red" onclick="recommend()" type="submit" name="action">Transform!
+       <i class="material-icons right">send</i>
+     </button>
+
+     </div>
+
+     <div class="col s6">
+       <div class="input-field col s12">
+          <i class="material-icons prefix">arrow_forward</i>
+          <input type="text" id="recipe-input" class="autocomplete">
+          <label for="autocomplete-input">Type Food Here</label>
+        </div>
+
+
+          <div class="input-field col s12">
+             <i class="material-icons prefix">arrow_forward</i>
+             <input type="text" id="cuisine-input" class="autocomplete">
+             <label for="autocomplete-input">Type Cuisine Here</label>
+           </div>
+
+   </div>
+ </div>
+
+
+  <br> <br> <br>
+
+  <div class="row" id="recipe_rows"></div>
+
+
+
+  </div>
+   </div>
+
+
+
+     <!--JavaScript at end of body for optimized loading-->
+     <script type="text/javascript" src="static/js/materialize.min.js"></script>
+     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+     <script src="static/recommender.js"> </script>
+     <script src="https://d3js.org/d3.v5.min.js"></script>
+
+
+   </body>
+ </html>
